@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página de Vendas — Produto Exemplo</title>
+  <meta name="description" content="Página de vendas simples e responsiva pronta para hospedar no GitHub Pages." />
+  <style>
+    :root{--accent: #0b74ff;--bg:#f7f9fc;--card:#ffffff;--radius:12px;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    .card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 8px 30px rgba(12,20,30,0.06)}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7cc3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:#334155;margin:12px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:18px}
+    .features{display:grid;gap:12px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .feature .dot{min-width:42px;height:42px;border-radius:10px;background:#eef6ff;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .price-card{padding:20px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfdff);display:flex;flex-direction:column;gap:12px;align-items:stretch}
+    .price{font-size:2rem;font-weight:800}
+    .btn{display:inline-block;text-decoration:none;padding:12px 16px;border-radius:10px;background:var(--accent);color:white;font-weight:700;text-align:center}
+    .muted{color:#64748b;font-size:0.95rem}
+    footer{margin-top:18px;text-align:center;color:#94a3b8;font-size:0.85rem}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.price-card{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="brand">
+          <div class="logo">FG</div>
+          <div>
+            <div style="font-weight:700">Produto Exemplo</div>
+            <div class="muted">Solução simples para problemas reais</div>
+          </div>
+        </div>
+        <div class="muted">Entrega instantânea | Garantia de 7 dias</div>
+      </header>
+
+      <main class="grid">
+        <section>
+          <h1>Transforme sua rotina com este produto</h1>
+          <p class="lead">Uma descrição curta e direta sobre o benefício principal. Explique o que o produto faz e para quem é — em 1 ou 2 frases fortes.</p>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature">
+              <div class="dot">1</div>
+              <div>
+                <strong>Benefício 1</strong>
+                <div class="muted">Explicação curta do benefício e por que importa.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">2</div>
+              <div>
+                <strong>Benefício 2</strong>
+                <div class="muted">Outro ponto de vantagem que convence o visitante.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">3</div>
+              <div>
+                <strong>Benefício 3</strong>
+                <div class="muted">Mais uma razão para comprar hoje.</div>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-top:18px">O que você recebe</h3>
+          <ul>
+            <li>Arquivo PDF com conteúdo completo;</li>
+            <li>Guia passo-a-passo;</li>
+            <li>Suporte por 7 dias após a compra.</li>
+          </ul>
+
+          <p class="muted" style="margin-top:12px">Depoimentos</p>
+          <blockquote style="margin:8px 0;padding-left:12px;border-left:3px solid #e6f0ff;color:#0f1724">
+            "Produto excelente — me ajudou muito." <br><small class="muted">— Cliente satisfeito</small>
+          </blockquote>
+        </section>
+
+        <aside>
+          <div class="price-card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div class="muted">Oferta especial</div>
+              <div class="muted">Pagamento seguro</div>
+            </div>
+
+            <div>
+              <div class="price">R$ 49,90</div>
+              <div class="muted">ou 3x de R$ 17,00</div>
+            </div>
+
+            <!-- Substitua o valor da variável abaixo pelo link real do seu produto -->
+            <!-- Exemplo: https://go.hotmart.com/K79252359J -->
+            <a class="btn" id="buyBtn" href="https://your.product.link" target="_blank" rel="noopener">Comprar agora</a>
+
+            <div class="muted" style="font-size:0.9rem">Garantia de reembolso em até 7 dias.</div>
+          </div>
+
+          <div style="margin-top:12px;text-align:center" class="muted">Suporte: contato@seudominio.com</div>
+        </aside>
+      </main>
+
+      <footer>
+        Desenvolvido por Facont Contabilidade — Página pronta para hospedar no GitHub Pages
+      </footer>
+    </div>
+  </div>
+
+  <!-- Instruções rápidas:
+       1) Salve este arquivo como "index.html" em um repositório GitHub.
+       2) Ative GitHub Pages em Settings > Pages > Branch: main (root).
+       3) Substitua a URL em href="https://your.product.link" pelo link de pagamento real.
+  -->
+</body>
+</html>
